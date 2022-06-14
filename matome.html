@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>まとめ</title>
+	<link rel="stylesheet" href="matome.css">
+</head> 
+
+<body>
+<div id="viewer">
+	<img src="image/yakei1.jpeg" style="opacity: 1; z-index 20;">
+	<img src="image/yakei2.jfif" style="opacity: 0;">
+	<img src="image/yakei3.jfif" style="opacity: 0;">
+	<img src="image/yakei4.jfif" style="opacity: 0;">
+	<img src="image/yakei5.jpg" style="opacity: 0;">
+</div>
+	
+<!--ナビゲーションメニュー-->
+<nav>
+	<ul>
+		<li><a href="#tukemono">京野菜漬物</a></li>
+		<li><a href="#yubadon">湯葉丼</a></li>
+		<li><a href="#yudoufu">湯豆腐</a></li>
+		<li><a href="#mattya">抹茶グルメ</a></li>
+		<li><a href="index.html">トップページ</a></li>
+	</ul>
+</nav>
+
+<!---------------------------------------------------------------------------->
+<section>
+
+<h1>その他おすすめ</h1>
+<div id="tukemono">
+<div class="gazou">
+<img src="image/tukemono2.jpg" width="300" height="250" alt="京野菜漬物">
+<img src="image/tukemono.jfif" width="300" height="250" alt="京野菜漬物2">
+<p><mark>京野菜のお漬物</mark><br>京野菜のみずみずしさで食感がシャキシャキ！</p>
+</div>
+</div>
+
+<div id="yubadon">
+<div class="gazou">
+<img src="image/yubadon.jpg" width="300" height="250" alt="湯葉丼1">
+<img src="image/yubadon2.jfif" width="300" height="250" alt="湯葉丼2">
+<p><mark>湯葉丼</mark><br>湯葉とお出汁の効いたあんかけがトロトロで美味しい！</p>
+</div>
+</div>
+
+<div id="yudoufu">
+<div class="gazou">
+<img src="image/yudoufu.jpg" width="300" height="250" alt="湯豆腐1">
+<img src="image/yudoufu2.jpg" width="300" height="250" alt="湯豆腐2">
+<p><mark>湯豆腐</mark><br>まろやかな豆腐と優しいお出汁でほっこり</p>
+</div>
+</div>
+
+<div id="mattya">
+<div class="gazou">
+<img src="image/mattya.jpg" width="300" height="250" alt="抹茶ラテ">
+<img src="image/mattya2.jpg" width="300" height="250" alt="辻利抹茶">
+<p><mark>抹茶グルメ</mark><br>濃厚な抹茶の風味が広がります！</p>
+</div>
+</div>
+</section>
+<!----------------------------------------------------------------------------->
+
+<!--あらかじめjQueryを読み込む-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<!--以下のコードを記述する-->
+<script type="text/javascript">
+$(function(){
+	var setImg = '#viewer';
+	var fadeSpeed = 1000;
+	var switchDelay = 3000;
+	
+	$(setImg).children('img').css({opacity:'0'});
+	$(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+	
+	setInterval(function(){
+		$(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+		},switchDelay);
+	});
+</script>
+</body>
+
+
+
+</html>
+
+
+

@@ -1,0 +1,206 @@
+.slideshow {
+	width: 300px;
+	margin: auto;
+	text-align: center;
+}
+
+.slideshow img {
+	
+	box-shadow: 10px 10px 14px #000;
+	width: 100%;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: serif;
+	background-color: #faebd7;
+}
+
+#container{
+	
+	
+	width:1100px;
+	margin: auto;
+}
+
+header{
+	height: 183px;
+	background-image: url("image/kyoto_top.jpg");
+	background-color: #fff;
+}
+
+#header-title{
+	padding-top: 10px;
+	color: #b22222;
+	font: bold 40px serif;
+}
+
+nav ul{
+	list-style-type: none;
+	display: flex;
+	width: 1100px;
+	text-align: center;
+	background-color: #dc143c;
+	margin: auto;
+	
+}
+
+nav a{
+	display: block;
+	width: 120px;
+	padding: 10px 5px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font: bold 13px;
+}
+
+nav a:hover{
+	background-color: #6495ed;
+}
+
+#menu{
+	float: left;
+	width:290px;
+	margin-top:20px;
+	
+	text-align: center;
+	/*border-right:solid 3px #ffc0cb;*/
+	
+	
+}
+
+#menu li{
+	list-style:none;
+}
+
+section{
+	text-align:center;
+	width:800px;
+	float: right;
+	/*border-left:solid 5px #ffc0cb;*/
+	
+}
+
+footer{	
+	padding:20px;
+	margin-top:30px;
+	clear: both;
+	text-align: center;
+	background-color:#ffc0cb;
+	color: #b22222;
+}
+
+h1{
+	font-size: 40px;
+	color: #b22222;
+	text-align: center;
+	margin: auto;
+}
+
+h2{
+	color: #b22222;
+	text-align: center;
+	margin: auto;
+}
+.top{
+	
+	text-align: center;
+}
+table{
+	margin-left:auto;
+	margin-right:auto;
+	
+	border-collapse:collapse;
+	width:480px;
+}
+
+th,td{
+	padding:3px 10px;
+}
+
+th{
+	border:solid 1px #deb887;
+	background-color: #ffc0cb;
+
+}
+
+td{
+	border:solid 1px #deb887;
+	background-color:#ffffff;
+}
+
+.form_txt{
+	margin-bottom: 20px;
+	font-size:20px;
+}
+
+textarea{
+	vertical-align: top;
+	font-size:15px;
+}
+
+
+.shop_text{
+	margin-bottom: 50px;
+	margin-top:50px;
+	text-align: center;
+	font-weight: bold;
+	background-color:#fff;
+	padding: 20px;
+}
+
+.gazou{
+	margin-top:30px;
+	margin-bottom: 20px;
+}
+
+.text{
+	background-color:#fff;
+	margin-left:20px;
+	text-align:left;
+	line-height: 2.0;
+}
+.text2{
+	background-color:#fff;
+	margin:auto;
+	text-align:center;
+	line-height: 2.0;
+}
+mark {
+  	background: linear-gradient(transparent 70%, #fff799 70%);
+  	font-weight: bold;
+}
+
+.otoriyose{
+	margin:20px;
+}
+
+.tenpo{
+	background-color:#fff;
+	font-weight: bold;
+	margin:auto;
+	text-align:center;
+	line-height: 2.0;
+}
+
+#menu2{
+	float: left;
+	width:290px;
+	margin-top:20px;
+	
+	text-align: center;
+	/*border-right:solid 3px #ffc0cb;*/
+	
+}
+
+#end{
+	font:  bold 20px serif;
+	color: #ff7f50;
+	margin-top:80px;
+	float: left;
+}

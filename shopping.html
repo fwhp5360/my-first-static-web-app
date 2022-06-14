@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+
+
+	<title>ショッピング</title>
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="hp.css">
+</head>
+
+<body>
+<div id="container">	<!--全体を囲むdiv-->
+
+<!--ヘッダー-->
+<header>
+	<div id="header-title">京都のおすすめグルメ</div>
+</header>
+
+<!--ナビゲーションメニュー-->
+<nav>
+	<ul>
+		<li><a href="index.html">トップページ</a></li>
+		<li><a href="aburi.html">あぶり餅</a></li>
+		<li><a href="dashimaki.html">だし巻きサンド</a></li>
+		<li><a href="hamo.html">鱧</a></li>
+		<li><a href="shippoku.html">しっぽくうどん</a></li>
+		<li><a href="yatuhashi.html">八ツ橋</a></li>
+		<li><a href="shopping.html">ショッピング</a></li>
+		<li><a href="otoiawase.html">お問い合わせ</a></li>
+	</ul>
+</nav>
+
+
+
+<!--左横メニュー-->
+
+<div id="menu2">
+<ul style="list-style: none;>
+	<li><a href="index.html"><image src="image/top.png" width="285" alt="トップページ" class="Item2"></a></li>
+	<li><a href="aburi.html"><image src="image/aburi_b.png" width="278" alt="あぶり餅" class="Item"></a></li>
+	<li><a href="dashimaki.html"><image src="image/dashimaki_b.png" alt="だし巻きサンド" class="Item"></a></li>
+	<li><a href="hamo.html"><image src="image/hamo_b.png" alt="鱧" class="Item"></a></li>
+	<li><a href="shippoku.html"><image src="image/shippoku_b.png" alt="しっぽくうどん" class="Item"></a></li>
+	<li><a href="yatuhashi.html"><image src="image/yatuhashi_b.png" alt="八ツ橋" class="Item"></a></li>
+	<li><a href="shopping.html"><image src="image/shopping_b.png" alt="ショッピング" class="Item"></a></li>
+	<li><a href="otoiawase.html"><image src="image/otoiawase_b.png" alt="お問い合わせ" class="Item"></a></li>
+</ul>
+</div>
+
+
+
+
+
+
+<!-- =================メインコンテンツ===================================== -->
+<section>
+	<h1>お取り寄せ</h1>
+
+<!--トップスライドショー -->
+<div class="slideshow">
+	<div><img src="image/aburi_top.jpg"  width="300" height="200" alt="あぶり餅"></div>
+	<div><img src="image/dashimaki_s.jpg" width="300" height="200" alt="だし巻きサンド"></div>
+	<div><img src="image/hamo.jpg" width="300" height="200" alt="鱧"></div>
+	<div><img src="image/shippoku.jpg" width="300" height="200" alt="しっぽくうどん"></div>
+	<div><img src="image/yuko.jpg" width="300" height="200" alt="八ツ橋"></div>
+</div>
+
+
+	<p class="shop_text">ご紹介したグルメはこちらで注文が可能です！</p>
+
+
+
+<div class="top">
+<form action="#" name="form1" onsubmit="return check()" onreset="return kakunin()"> 
+<table border="1">
+<tr><th>商品名</th><th>単価</th><th>数量</th><th>金額</th></tr>
+<tr><td>あぶり餅 39本</td><td>1500円</td>
+		<td><select name="aburi" onChange="kei1()">
+		<option>0</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		</select></td>
+<td><input type="text" name="kingaku1" size="8" value="0" class="right">円</td>
+</tr>
+<tr><td>だし巻きサンド</td>
+<td>540円</td>
+		<td><select name="dashimaki" onChange="kei2()">
+		<option>0</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		</select></td>
+<td><input type="text" name="kingaku2" size="8" value="0" class="right">円</td>
+</tr>
+<tr><td>鱧（はも） 350g</td>
+<td>10000円</td>
+		<td><select name="hamo" onChange="kei3()">
+		<option>0</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		</select></td>
+<td><input type="text" name="kingaku3" size="8" value="0" class="right">円</td>
+</tr>
+<tr><td>しっぽくうどん</td>
+<td>432円</td>
+		<td><select name="shippoku" onChange="kei4()">
+		<option>0</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		</select></td>
+<td><input type="text" name="kingaku4" size="8" value="0">円</td>
+</tr>
+<tr><td>八ツ橋</td>
+<td>594円</td>
+		<td><select name="yatuhashi" onChange="kei5()">
+		<option>0</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		</select></td>
+<td><input type="text" name="kingaku5" size="8" value="0" class="right">円</td></tr>
+<tr><td colspan="3">合計</td>
+<td><input type="text" name="goukei" size="8">円</td>
+</tr>
+<tr>
+<td colspan="3">消費税</td><td><input type="text" name="zei" size="8">円</td>
+</tr>
+<tr>
+<td colspan="3">お届け先</td>
+<td class="right"><select name="otodoke" onChange="kei6()">
+	<option value="sentaku">一覧から選択</option>
+	<option value="hokkaidou">北海道</option>
+	<option value="touhoku">東北</option>
+	<option value="kantou">関東</option>
+	<option value="chuubu">中部</option>
+	<option value="kansai">関西</option>
+	<option value="chuugoku">中国</option>
+	<option value="shikoku">四国</option>
+	<option value="kyuusyu">九州</option></select></td></tr>
+<tr>
+<td colspan="3">配送料</td>
+<td colspan="3" class="right"><input type="text" name="haisou" value="0" size="18" class="right">円</td>
+</tr>
+<td colspan="3">総合計</td>
+<td class="right"><input type="text" name="total" value="0" size="18" class="right">円</td>
+</tr>
+<tr><td colspan="4">
+<p>お客様情報を入力してください。</p>
+
+<p>支払方法（必須）<br>
+
+<input type="radio" name="shiharai" value="daibiki">代金引換
+<input type="radio" name="shiharai" value="furikomi">銀行振込</p>
+
+<p>お名前（必須）<br>
+<input type="text" name="namae" size="40" value=""></p>
+<p>郵便番号（必須）（例：604-8225）&nbsp;半角で入力<br>
+〒<input type="text" name="yuubin" size="10" value=""></p>
+
+<p>ご住所（必須）<br>
+<input type="text" name="jusyo" sizze="50" value=""></p>
+
+<p>電話番号（必須）（例：012-345-6789)&nbsp;半角で入力<br>
+<input type="text" name="denwa" size="20" value=""></p>
+
+<p>メールアドレス（必須）<br>
+<input type="text" name="mail" size="40" value=""></p>
+
+<p>備考<br>
+<textarea name="memo" cols="40" rows="5">　ご　意　見　ご　要　望　</textarea></p></td></tr>
+<tr><td colspan="4"><input type="reset" value="リセット"> <input type="submit" value="注文"></td></tr>
+</table>
+</form>
+</div>
+</section>
+
+<footer>	<!--フッター-->
+<p>&copy;全ての内容の無断転載・転用はお断りします　「京都のおすすめグルメ　森のページ」</p>
+</footer>
+
+</div>	<!--全体を囲むdiv終わり-->
+
+<!--JavaScript-->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="hp.js"></script>
+	<script src="shopping.js"></script>
+</body>
+
+</html>
